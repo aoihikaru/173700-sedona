@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Рита Ярёменко](https://up.htmlacademy.ru/htmlcss/17/user/173700).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
