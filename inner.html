@@ -8,13 +8,13 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <img src="img/index-logo.png" alt="Седона" width="138" height="70">
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
+            <li><a href="index.html"><img src="img/main-logo.png" alt="Седона" width="138" height="70"></a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li class="opened"><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
       </div>
@@ -60,51 +60,51 @@
             <legend class="hotel-form-title">Стоимость в сутки (Р):</legend>
             <div>От 0</div>
             <div>До 3000</div>
-            <input type="range" name="range" min="0" max="3000">
+            <div class="hotel-form-ranging"></div>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
       </header>
       <div class="selection-part">
-        <h2>Найдено: 3</h2>
+        <h2 class="selection-part-title">Найдено: 3</h2>
         <p>Сортировка:</p>
         <ul>
           <li class="selected-page"><a>По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По рейтингу</a></li>
         </ul>
-        <a><img src="" alt="Сортировка по убыванию"></a>
-        <a href="#"><img src="" alt="Сортировка по возрастанию"></a>
+        <a class="sort-descending"></a>
+        <a href="#" class="sort-ascending"></a>
       </div>
       <div class="hotel-selection">
-        <section>
-          <h2>Amara Restort & Spa</h2>
-          <img src="" alt="" width="" height="">
-          <img src="" alt="" width="" height="">
+        <section class="hotel-selection-item">
+          <h2 class="hotel-selection-title">Amara Restort &amp; Spa</h2>
+          <img src="img/hotel-image.jpg" alt="Amara Restort &amp; Spa" width="135" height="90">
+          <div class="four-stars"></div>
           <div class="hotel-type">Гостиница</div>
           <div class="hotel-price">От 4000 р.</div>
-          <button class="more">Подробнее</button>
-          <button class="book">Забронировать</button>
+          <a class="more" href="#">Подробнее</a>
+          <a class="book" href="#">Забронировать</a>
           <div class="ratio">Рейтинг: 8,5</div>
         </section>
-        <section>
-          <h2>Desert Quail Inn</h2>
-          <img src="" alt="" width="" height="">
-          <img src="" alt="" width="" height="">
+        <section class="hotel-selection-item">
+          <h2 class="hotel-selection-title">Desert Quail Inn</h2>
+          <img src="img/motel-image.jpg" alt="Desert Quail Inn" width="135" height="90">
+          <div class="three-stars"></div>
           <div class="hotel-type">Мотель</div>
           <div class="hotel-price">От 3000 р.</div>
-          <button class="more">Подробнее</button>
-          <button class="book">Забронировать</button>
+          <a class="more" href="#">Подробнее</a>
+          <a class="book" href="#">Забронировать</a>
           <div class="ratio">Рейтинг: 8,9</div>
         </section>
-        <section>
-          <h2>Villas at Poco Diablo</h2>
-          <img src="" alt="" width="" height="">
-          <img src="" alt="" width="" height="">
+        <section class="hotel-selection-item">
+          <h2 class="hotel-selection-title">Villas at Poco Diablo</h2>
+          <img src="img/apartment-image.jpg" alt="Villas at Poco Diablo" width="135" height="90">
+          <div class="two-stars"></div>
           <div class="hotel-type">Апартаменты</div>
           <div class="hotel-price">От 2000 р.</div>
-          <button class="more">Подробнее</button>
-          <button class="book">Забронировать</button>
+          <a class="more" href="#">Подробнее</a>
+          <a class="book" href="#">Забронировать</a>
           <div class="ratio">Рейтинг: 9,2</div>
         </section>
       </div>
@@ -120,7 +120,7 @@
       </section>
       <section class="footer-copyright">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/ha-logo.png" alt="htmlacademy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
       </section>
     </footer>
   </body>

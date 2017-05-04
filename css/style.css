@@ -1,0 +1,32 @@
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.3em;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.promo-header-title,
+.offer-form-title,
+.hotel-selection-title,
+.selection-part-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.feature-title,
+.feature-title-diff {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.offer-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.hotel-form-title {
+  font-size: 16px;
+  line-height: 21px;
+}

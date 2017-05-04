@@ -8,45 +8,49 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <img src="img/index-logo.png" alt="Седона" width="138" height="70">
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
+            <li><a><img src="img/main-logo.png" alt="Седона" width="138" height="70"><a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li><a href="inner.html">Гостиницы</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="container">
       <header class="promo-header">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, почему Седона круче, чем Гранд Каньон!</p>
+        <h2 class="promo-header-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="content-information">Рассмотрим 5 причин, почему Седона круче, чем Гранд Каньон!</p>
       </header>
       <section class="feature">
         <div class="feature-description">
           <h3 class="feature-title">Настоящий
           городок</h3>
-          <p>Седона - не аттракцион для туристов,
+          <p>&mdash; №1 &mdash;</p>
+          <p>Седона &mdash; не аттракцион для туристов,
           там течет своя жизнь</p>
         </div>
-        <img src="" width="800" height="255">
+        <img src="img/first-feature-image.jpg" width="800" height="256">
       </section>
       <section class="feature">
-        <div class="feature-description">
-          <h3 class="feature-title">Жилье</h3>
-          <p>Рекомендуем пожить в настоящем
+        <div class="feature-description-item">
+          <div class="feature-description-image"></div>
+          <h3 class="feature-title-diff">Жилье</h3>
+          <p class="content-information">Рекомендуем пожить в настоящем
           мотеле, все как в кино!</p>
         </div>
-        <div class="feature-description">
-          <h3 class="feature-title">Еда</h3>
-          <p>Всегда заказывайте фирменный бургер,
+        <div class="feature-description-item">
+          <div class="feature-description-image"></div>
+          <h3 class="feature-title-diff">Еда</h3>
+          <p class="content-information">Всегда заказывайте фирменный бургер,
           не разочаруетесь!</p>
         </div>
-        <div class="feature-description">
-          <h3 class="feature-title">Сувениры</h3>
-          <p>Не только китайского, но и местного
+        <div class="feature-description-item">
+          <div class="feature-description-image"></div>
+          <h3 class="feature-title-diff">Сувениры</h3>
+          <p class="content-information">Не только китайского, но и местного
           производства!</p>
         </div>
       </section>
@@ -54,38 +58,45 @@
         <div class="feature-description">
           <h3 class="feature-title">Там есть
           Мост Дьявола</h3>
+          <p>&mdash; №2 &mdash;</p>
           <p>Да, по нему можно пройти! Если конечно
           Вы осмелитесь</p>
         </div>
-        <img src="" width="800" height="255">
+        <img src="img/second-feature-image.jpg" width="800" height="256">
       </section>
       <section class="feature">
-        <div class="feature-description">
-          <h3 class="feature-title">Небольшая
+        <div class="feature-description-item">
+          <h3 class="feature-title-diff">Небольшая
           площадь</h3>
-          <p>Все достопримечательности
+          <p class="content-information">&mdash; №3 &mdash;</p>
+          <p class="content-information">Все достопримечательности
           находятся очень близко</p>
         </div>
-        <div class="feature-description">
-          <h3 class="feature-title">Красивая
+        <div class="feature-description-item">
+          <h3 class="feature-title-diff">Красивая
           дорога</h3>
-          <p>Ехать в Седону из Лас-Вегаса совсем
+          <p class="content-information">&mdash; №4 &mdash;</p>
+          <p class="content-information">Ехать в Седону из Лас-Вегаса совсем
           не скучно!</p>
         </div>
-        <div class="feature-description">
-          <h3 class="feature-title">Мало
+        <div class="feature-description-item">
+          <h3 class="feature-title-diff">Мало
           туристов</h3>
-          <p>Большинство едет в Гранд Каньон и
+          <p class="content-information">&mdash; №5 &mdash;</p>
+          <p class="content-information">Большинство едет в Гранд Каньон и
           толпится там</p>
         </div>
       </section>
-      <section>
-        <h2 class="offer-title">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,
-        и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <div class="offer-form">
-          <h2 class="offer-form-title">Поиск гостиницы в Седоне</h2>
-          <form name="offer-form-body" action="/echo" method="post">
+      <article>
+        <section>
+         <h2 class="offer-title">Заинтересовались?</h2>
+         <p class="content-information">Укажите предполагаемые даты поездки,
+         и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+         <h3 class="offer-form-title offer-form">Поиск гостиницы в Седоне</h3>
+        </section>
+        <section>
+          <img src="img/sedona-map.jpg" width="1200" height="593">
+          <form name="offer-form-body offer-form" action="/echo" method="post">
             <fieldset class="offer-form-group">
               <label for="arrive_date">Дата заезда:</label>
               <input type="date" name="arrive_date" id="arrive_date">
@@ -108,8 +119,8 @@
             </fieldset>
             <input class="offer-form-btn" type="submit" value="Найти">
           </form>
-        </div>
-      </section>
+        </section>
+      </article>
     </main>
     <footer class="main-footer">
       <section class="footer-sedona">
@@ -122,7 +133,7 @@
       </section>
       <section class="footer-copyright">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/ha-logo.png" alt="htmlacademy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
       </section>
     </footer>
   </body>
