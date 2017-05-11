@@ -1,15 +1,21 @@
+html,
 body {
-  font-family: "PT Sans", Arial, sans-serif;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 1.3em;
   color: rgb(0, 0, 0);
   background-color: rgb(241, 241, 241);
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  background-image: url("../sedona-index-1200.jpg");
+/*  background-image: url("../sedona-hotels-1200.jpg");*/
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 /*стили для текста*/
@@ -142,13 +148,6 @@ body {
 .footer-copyright {
   width: 240px;
   background-color: rgba(15, 212, 2, 0.31);
-}
-
-body {
-/*  background-image: url("../sedona-index-1200.jpg");*/
-/*  background-image: url("../sedona-hotels-1200.jpg");*/
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 /*страница каталога*/
