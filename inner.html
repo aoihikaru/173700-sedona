@@ -6,23 +6,31 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
-        <nav class="main-navigation">
-          <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="index.html"><img src="img/main-logo.png" alt="Седона" width="138" height="70"></a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li class="opened"><a href="#">Гостиницы</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header class="inner-header container">
+      <nav class="main-navigation">
+<!--         <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="index.html"><img src="img/main-logo.png" alt="Седона" width="138" height="70"></a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li class="opened">
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul> -->
+      </nav>
     </header>
     <main class="container">
       <header class="hotel-form">
         <form name="hotel-select" action="/echo" method="post">
-          <fieldset>
+          <!-- <section class="hotel-select-section">
             <legend class="hotel-form-title">Инфраструктура:</legend>
             <ul>
               <li>
@@ -38,8 +46,8 @@
                 <label for="wi_fi">Wi-Fi</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset>
+          </section>
+          <section class="hotel-select-section">
             <legend class="hotel-form-title">Тип жилья:</legend>
             <ul>
               <li>
@@ -55,14 +63,14 @@
                 <label for="apartment">Апартаменты</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset>
+          </section>
+          <section class="hotel-select-section">
             <legend class="hotel-form-title">Стоимость в сутки (Р):</legend>
             <div>От 0</div>
             <div>До 3000</div>
             <div class="hotel-form-ranging"></div>
-          </fieldset>
-          <button type="submit">Показать</button>
+          </section>
+          <button type="submit">Показать</button> -->
         </form>
       </header>
       <div class="selection-part">
@@ -109,7 +117,7 @@
         </section>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="footer-sedona">
         <p>#visitsedona</p>
       </section>
@@ -120,7 +128,7 @@
       </section>
       <section class="footer-copyright">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academy</a>
       </section>
     </footer>
   </body>

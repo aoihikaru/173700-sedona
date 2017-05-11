@@ -4,8 +4,15 @@ body {
   font-size: 12px;
   line-height: 1.3em;
   color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241, 241, 241);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*стили для текста*/
 
 .promo-header-title,
 .offer-form-title,
@@ -13,20 +20,155 @@ body {
 .selection-part-title {
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
 }
 
 .feature-title,
 .feature-title-diff {
   font-size: 21px;
-  line-height: 21px;
+  font-weight: bold;
 }
 
 .offer-title {
   font-size: 30px;
-  line-height: 30px;
+  font-weight: bold;
 }
 
 .hotel-form-title {
   font-size: 16px;
   line-height: 21px;
+  font-weight: bold;
 }
+
+/*сетка*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*главная страница*/
+
+.main-navigation {
+  min-height: 55px;
+  background-color: rgba(255, 212, 166, 0.31);
+}
+
+.main-header::after {
+  width: 1200px;
+  height: 510px;
+  content: "";
+  display: block;
+  background-image: url("../img/index-page-background.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
+
+.promo-header {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+
+.promo-header-title,
+.promo-header-content {
+  align-self: center;
+  width: 500px;
+  background-color: rgba(168, 212, 166, 0.31);
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-description,
+.feature-description-item {
+  min-height: 255px;
+  width: 400px;
+}
+
+.feature-description-item {
+  min-height: 330px;
+}
+
+.offer-content::after {
+  width: 1200px;
+  height: 475px;
+  content: "";
+  display: block;
+  background-image: url("../img/sedona-map.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.offer-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;
+}
+
+.offer-title,
+.offer-content-information,
+.offer-form-title {
+  align-self: center;
+  width: 575px;
+  background-color: rgba(168, 212, 32, 0.31);
+}
+
+.offer-title {
+  margin-bottom: 35px;
+}
+
+.offer-content-information {
+  margin-bottom: 50px;
+}
+
+.offer-form-title {
+  min-height: 85px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  min-height: 120px;
+}
+
+.footer-sedona,
+.footer-social,
+.footer-copyright {
+  width: 240px;
+  background-color: rgba(15, 212, 2, 0.31);
+}
+
+body {
+/*  background-image: url("../sedona-index-1200.jpg");*/
+/*  background-image: url("../sedona-hotels-1200.jpg");*/
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+/*страница каталога*/
+
+.hotel-form {
+  height: 217px;
+  background-image: url("../img/inner-page-background.jpg");
+  background-repeat: no-repeat;
+}
+
+ .selection-part {
+  min-height: 85px;
+ }
+
+.selection-part,
+.hotel-selection-item {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  display: flex;
+ }
+
+ .hotel-selection-item {
+  min-height: 150px;
+ }
