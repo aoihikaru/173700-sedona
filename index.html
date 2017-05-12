@@ -44,7 +44,7 @@
           <p>Седона &mdash; не аттракцион для туристов,
           там течет своя жизнь</p>
         </div>
-        <img src="img/first-feature-image.jpg" width="800" height="256">
+        <img src="img/first-feature-image.jpg" width="800" height="256" alt="Настоящий городок">
       </section>
       <section class="feature">
         <div class="feature-description-item">
@@ -64,7 +64,7 @@
         </div>
       </section>
       <section class="feature">
-        <img src="img/second-feature-image.jpg" width="800" height="256">
+        <img src="img/second-feature-image.jpg" width="800" height="256" alt="Мост Дьявола">
         <div class="feature-description">
           <h3 class="feature-title">Там есть<br>
           Мост Дьявола</h3>
@@ -103,8 +103,9 @@
          и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
          <h3 class="offer-form-title offer-form">Поиск гостиницы в Седоне</h3>
         </section>
-        <section>
-          <form name="offer-form-body offer-form" action="/echo" method="post">
+        <section class="form-map">
+          <div class="map"></div>
+          <form class="offer-form-body offer-form" action="/echo" method="post">
             <fieldset class="offer-form-group">
               <label for="arrive_date">Дата заезда:</label>
               <input type="date" name="arrive_date" id="arrive_date">
@@ -118,8 +119,6 @@
               <button type="button">-</button>
               <input type="text" name="offer_form_adult" id="offer_form_adult" value="2">
               <button type="button">+</button>
-            </fieldset>
-            <fieldset class="offer-form-group">
               <label for="offer_form_children">Дети:</label>
               <button type="button">-</button>
               <input type="text" name="offer_form_children" id="offer_form_children" value="0">

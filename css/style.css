@@ -32,12 +32,6 @@ body {
   font-weight: bold;
 }
 
-.hotel-form-title {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: bold;
-}
-
 /*сетка*/
 
 .container {
@@ -115,19 +109,19 @@ body {
 
 .main-navigation-list a,
 .offer-form-group button,
-.hotel-selection-title {
+.hotel-selection-title a {
   color: rgb(0, 0, 0);
 }
 
 .main-navigation-list a:hover,
 .offer-form-group button:hover,
-.hotel-selection-title:hover {
+.hotel-selection-title a:hover {
   color: rgb(129, 179, 210);
 }
 
 .main-navigation-list a:active,
 .offer-form-group button:active,
-.hotel-selection-title:active {
+.hotel-selection-title a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -256,15 +250,6 @@ body {
   margin-bottom: 25px;
 }
 
-.offer-content::after {
-  width: 1200px;
-  height: 593px;
-  content: "";
-  display: block;
-  background-image: url("../img/sedona-map.jpg");
-  background-repeat: no-repeat;
-}
-
 .offer-content {
   display: flex;
   flex-direction: column;
@@ -273,9 +258,10 @@ body {
 }
 
 .offer-title,
-.offer-content-information {
+.offer-content-information,
+.offer-form-title {
   align-self: center;
-  width: 575px;
+  width: 570px;
 }
 
 .offer-title {
@@ -289,12 +275,88 @@ body {
 }
 
 .offer-form-title {
-  width: 295px;
-  padding: 30px 140px;
+  padding: 30px 0;
   background-color: rgb(118, 99, 87);
   color: rgb(255, 255, 255);
-  align-self: center;
   margin-bottom: 0;
+  text-align: center;
+}
+
+.form-map {
+  position: relative;
+}
+
+.map {
+  width: 1200px;
+  height: 593px;
+  content: "";
+  display: block;
+  background-image: url("../img/sedona-map.jpg");
+  background-repeat: no-repeat;
+}
+
+.offer-form-body {
+  position: absolute;
+  width: 460px;
+  padding: 55px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  top: 0;
+  left: 315px;
+}
+
+.offer-form-group {
+  border: none;
+}
+
+.offer-form-group:last-of-type {
+  font-size: 0;
+}
+
+.offer-form-group input[type="date"] {
+  width: 345px;
+  background-color: rgb(242, 242, 242);
+}
+
+.offer-form-group label,
+.offer-form-group button,
+.offer-form-group input[type="text"] {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.offer-form-group button,
+.offer-form-group input[type="text"] {
+  width: 38px;
+  height: 38px;
+  background-color: rgb(242, 242, 242);
+  text-align: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offer-form-btn {
+  width: 100%;
+  height: 60px;
+  vertical-align: center;
+  text-align: center;
+  background-color: rgb(129, 179, 210);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.offer-form-btn:hover {
+  background-color: rgb(102, 158, 192);
+  color: ;
+}
+
+.offer-form-btn:active {
+  background-color: rgb(84, 150, 189);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*подвал*/
@@ -404,10 +466,59 @@ body {
   height: 217px;
   background-image: url("../img/inner-page-background.jpg");
   background-repeat: no-repeat;
+  background-color: rgb(129, 179, 210);
 }
 
- .selection-part {
-  min-height: 85px;
+.hotel-select-section {
+  border: none;
+  float: left;
+  padding: 30px 70px;
+}
+
+.hotel-select-section:last-of-type {
+  float: right;
+}
+
+.hotel-form-title {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.hotel-select-section ul {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-select-section li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.hotel-select-section label,
+.hotel-select-price,
+.hotel-select-button {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+}
+
+.hotel-select-button {
+  float: right;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.selection-part {
+  display: flex;
+  padding: 30px 72px;
+  align-items: center;
+ }
+
+ .selection-part li {
+  display: inline-block;
  }
 
 .selection-part,
@@ -426,6 +537,30 @@ body {
 
 .hotel-definition {
   width: 260px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hotel-selection-title {
+  margin: -10px 0 10px;
+}
+
+.hotel-selection-title a {
+  text-decoration: none;
+}
+
+.hotel-type,
+.hotel-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 16px;
+}
+
+.hotel-type {
+  width: 110px;
+  margin-right: 4px;
 }
 
 .more {
@@ -474,7 +609,7 @@ body {
 }
 
 .ratio-list {
-  margin-left: 490px;
+  margin-left: 520px;
   display: flex;
   width: 110px;
   flex-wrap: wrap;
@@ -510,7 +645,6 @@ body {
 
 .ratio {
   width: 110px;
-  height: 27px;
   padding: 3px 0;
   background-color: rgb(242, 242, 242);
   text-align: center;
