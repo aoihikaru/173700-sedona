@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="inner-header container">
+    <header class="main-header container">
       <nav class="main-navigation">
        <a href="index.html" class="main-logo">
          <img src="img/main-logo.png" alt="Седона" width="138" height="70">
        </a>
-        <ul class="main-navigation-list list-right">
+        <ul class="main-navigation-list">
           <li>
             <a href="#">Информация</a>
           </li>
           <li>
             <a href="#">Фото и видео</a>
           </li>
-        </ul>
-        <ul class="main-navigation-list list-left">
           <li>
             <a href="#">Карта штата</a>
           </li>
@@ -30,24 +28,23 @@
           </li>
         </ul>
       </nav>
-    </header>
     <main class="container">
       <header class="hotel-form">
-        <form name="hotel-select" action="/echo" method="post">
+        <form class="hotel-select" action="/echo" method="post">
           <fieldset class="hotel-select-section">
             <legend class="hotel-form-title">Инфраструктура:</legend>
             <ul>
               <li>
                 <input type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">Бассейн</label>
+                <label class="label-checkbox" for="pool">Бассейн</label>
               </li>
               <li>
                 <input type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
+                <label class="label-checkbox" for="parking">Парковка</label>
               </li>
               <li>
                 <input type="checkbox" name="wi_fi" id="wi_fi">
-                <label for="wi_fi">Wi-Fi</label>
+                <label class="label-checkbox" for="wi_fi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -56,44 +53,52 @@
             <ul>
               <li>
                 <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
+                <label class="label-checkbox" for="hotel">Гостиница</label>
               </li>
               <li>
                 <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
+                <label class="label-checkbox" for="motel">Мотель</label>
               </li>
               <li>
                 <input type="checkbox" name="apartment" id="apartment" checked>
-                <label for="apartment">Апартаменты</label>
+                <label class="label-checkbox" for="apartment">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="hotel-select-section">
-            <legend class="hotel-form-title">Стоимость в сутки (Р):</legend>
-            <div class="hotel-select-price">От 0</div>
-            <div class="hotel-select-price">До 3000</div>
-            <div class="hotel-form-ranging"></div>
+          <fieldset class="price-select-section">
+            <legend class="price-form-title">Стоимость в сутки (Р):</legend>
+            <div class="select-price">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max=price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="form-range">
+              <div class="form-scale">
+                <div class="form-bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="hotel-select-button" type="submit">Показать</button>
           </fieldset>
-          <button class="hotel-select-button" type="submit">Показать</button>
         </form>
       </header>
       <div class="selection-part">
         <h2 class="selection-part-title">Найдено: 3</h2>
         <p>Сортировка:</p>
         <ul>
-          <li class="selected-page"><a>По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По рейтингу</a></li>
+          <li class="selected-page"><a class="type-selector">По цене</a></li>
+          <li><a class="type-selector" href="#">По типу</a></li>
+          <li><a class="type-selector" href="#">По рейтингу</a></li>
         </ul>
-        <a class="sort-descending">сортировка по убыванию</a>
         <a href="#" class="sort-ascending">сортировка по возрастанию</a>
+        <a class="sort-descending">сортировка по убыванию</a>
       </div>
       <div class="hotel-selection">
         <section class="hotel-selection-item">
-          <img src="img/hotel-image.jpg" alt="Amara Restort &amp; Spa" width="135" height="90">
+          <img src="img/hotel-image.jpg" alt="Amara Resort &amp; Spa" width="135" height="90">
           <div class="hotel-definition">
             <h2 class="hotel-selection-title">
-              <a href="#">Amara Restort &amp; Spa</a>
+              <a href="#">Amara Resort &amp; Spa</a>
             </h2>
             <div class="hotel-type">Гостиница</div>
             <div class="hotel-price">От 4000 р.</div>
