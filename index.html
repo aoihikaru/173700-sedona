@@ -104,17 +104,16 @@
             <a href="#">Поиск гостиницы в Седоне</a>
           </h3>
         </section>
-        <section class="form-map">
-          <div class="map"></div>
+        <section class="offer-form">
           <form class="offer-form-body offer-form" action="/echo" method="post">
             <fieldset class="offer-form-group">
               <label for="arrive_date">Дата заезда:</label>
-              <input class="date" type="text" name="arrive_date" id="arrive_date" placeholder="24 апреля 2017">
+              <input class="date" type="text" name="arrive_date" id="arrive_date" value="24 апреля 2017">
               <a class="form-calendar" href="#">Календарь</a>
             </fieldset>
             <fieldset class="offer-form-group">
               <label for="departure_date">Дата выезда:</label>
-              <input class="date" type="text" name="departure_date" id="departure_date" placeholder="4 июля 2017">
+              <input class="date" type="text" name="departure_date" id="departure_date" value="4 июля 2017">
               <a class="form-calendar" href="#">Календарь</a>
             </fieldset>
             <fieldset class="offer-form-group">
@@ -131,8 +130,9 @@
           </form>
         </section>
       </article>
+    <div class="container map"></div>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer container index-footer">
       <section class="footer-sedona">
         <p>#visitsedona</p>
       </section>
