@@ -19,11 +19,6 @@ body {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 
 /*главное меню*/
 
@@ -282,10 +277,6 @@ img {
   background-color: rgb(129, 179, 210);
 }
 
-.feature img {
-  height: 256px;
-}
-
 .feature-description {
   width: 400px;
 
@@ -459,7 +450,7 @@ img {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 
-  transform: translateY(-700%);
+  transform: translateY(-70000%);
   transition: 0.5s;
 }
 
