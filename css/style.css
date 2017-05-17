@@ -242,7 +242,7 @@ img {
 
   background: url("../img/index-mask.png") 0 100% no-repeat,
     url("../img/index-promo-image.png") 50% 49% no-repeat,
-    rgb(228, 241, 249) url("../img/index-page-background-1.jpg") 0 -55px no-repeat;
+    rgb(228, 241, 249) url("../img/index-page-background.jpg") 0 -55px no-repeat;
 }
 
 .promo-header-title {
@@ -430,8 +430,9 @@ img {
   color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
-  
+
   background-color: rgb(118, 99, 87);
+  cursor: pointer;
 }
 
 .offer-form {
@@ -457,9 +458,9 @@ img {
 
   background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  
+
   transform: translateY(-700%);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .offer-active {
@@ -517,10 +518,10 @@ img {
 
 .form-calendar {
   position: absolute;
-  
+
   width: 21px;
   height: 22px;
-  
+
   content: "";
   background: transparent url("../img/sprite.png") 0 -610px no-repeat;
 }
@@ -831,7 +832,7 @@ input:checked:disabled + .label-checkbox::before {
 
 .hotel-select-button:hover {
   color: rgb(0, 0, 0);
-  
+
   background: rgb(255, 255, 255);
 }
 
