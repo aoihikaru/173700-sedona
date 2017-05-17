@@ -16,6 +16,12 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -97,7 +103,6 @@ body {
 .main-footer {
   position: relative;
   display: flex;
-  z-index: 1;
 
   background-color: rgba(254, 254, 254, 0.9);
 }
@@ -214,7 +219,7 @@ body {
   width: 113px;
   height: 39px;
 
-  background: url("../img/sprite.png") no-repeat 0 -83px;
+  background: url("../img/sprite.png") no-repeat 0 -82px;
 }
 
 
@@ -235,7 +240,9 @@ body {
   height: 509px;
   margin-bottom: 59px;
 
-  background: rgb(228, 241, 249) url("../img/index-page-background.jpg") no-repeat;
+  background: url("../img/index-mask.png") 0 100% no-repeat,
+    url("../img/index-promo-image.png") 50% 49% no-repeat,
+    rgb(228, 241, 249) url("../img/index-page-background-1.jpg") 0 -55px no-repeat;
 }
 
 .promo-header-title {
@@ -258,6 +265,7 @@ body {
 
   font-size: 14px;
   line-height: 26px;
+  color: rgb(51, 51, 51);
   text-align: center;
 }
 
@@ -267,6 +275,15 @@ body {
   padding: 0;
 
   background-color: rgb(255, 255, 255);
+}
+
+.feature:first-of-type,
+.feature:nth-of-type(3) {
+  background-color: rgb(129, 179, 210);
+}
+
+.feature img {
+  height: 256px;
 }
 
 .feature-description {
@@ -395,48 +412,52 @@ body {
 .offer-content-information {
   align-self: center;
   width: 570px;
-  margin-bottom: 33px;
+  margin-bottom: 47px;
 
   font-size: 14px;
   line-height: 24px;
+  color: rgb(51, 51, 51);
 }
 
 .offer-form-title {
   align-self: center;
   width: 568px;
   padding: 30px 0;
-  margin-bottom: 0;
 
-  background-color: rgb(118, 99, 87);
-}
-
-.offer-form-title a {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
+  
+  background-color: rgb(118, 99, 87);
+}
+
+.offer-form {
+  position: relative;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-700%);
+  transition: 1s;
+}
+
+.offer-active {
+  transform: translateY(0);
+  transition: 1s;
 }
 
 .map {
-  position: relative;
   width: 1200px;
   height: 593px;
-  z-index: -10;
 
   content: "";
   background: rgb(242, 241, 239) url("../img/sedona-map.jpg") no-repeat;
 }
 
-.offer-form {
-  position: relative;
-}
-
 .offer-form-body {
   position: absolute;
   top: 0;
-  left: 315px;
+  left: 316px;
 
   width: 458px;
   margin: 0 auto;
@@ -468,8 +489,9 @@ body {
   display: inline-block;
   vertical-align: top;
   width: 292px;
+  height: 34px;
   margin: 0;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-right: 38px;
 
   font-family: inherit;
@@ -480,25 +502,46 @@ body {
   text-transform: uppercase;
 
   background-color: rgb(242, 242, 242);
-
   border: 2px solid rgb(242, 242, 242);
 }
 
 .offer-form-group .date:hover {
   background-color: rgb(235, 235, 235);
-
   border: 2px solid rgb(235, 235, 235);
 }
 
 .offer-form-group .date:focus {
   background-color: rgb(255, 255, 255);
-
   border: 2px solid rgb(235, 235, 235);
 }
 
-/* .form-calendar {
-  background: rgb(242, 242, 242) url("../img/sprite.png") no-repeat;
-} */
+.form-calendar {
+  position: absolute;
+  
+  width: 21px;
+  height: 22px;
+  
+  content: "";
+  background: transparent url("../img/sprite.png") 0 -610px no-repeat;
+}
+
+.form-calendar:hover {
+  background: transparent url("../img/sprite.png") 0 -658px no-repeat;
+}
+
+.form-calendar:active {
+  background: transparent url("../img/sprite.png") 0 -634px no-repeat;
+}
+
+.arrive-date {
+  top: 63px;
+  left: 482px;
+}
+
+.departure-date {
+  top: 130px;
+  left: 482px;
+}
 
 .offer-form-group .form-text {
   width: 38px;
@@ -506,6 +549,7 @@ body {
   margin: 0;
   padding: 0;
 
+  font-family: inherit;
   font-size: 14px;
   line-height: 38px;
   font-weight: bold;
@@ -550,6 +594,7 @@ body {
   margin-top: 40px;
   margin-bottom: 15px;
 
+  font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   color: rgb(255, 255, 255);
@@ -572,7 +617,6 @@ body {
 }
 
 .index-footer {
-  position: relative;
   margin-top: -120px;
 }
 
@@ -715,6 +759,7 @@ input:checked:disabled + .label-checkbox::before {
 
 .select-price input {
   width: 40px;
+  height: 32px;
   margin: 0;
 
   font: inherit;
